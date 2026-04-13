@@ -1,12 +1,14 @@
 // PROBLEM: Print numbers 1 to N using recursion
 // SOURCE: Striver Sheet - Basics
-// APPROACH: Recursion - print then call next
+// APPROACH: Recursion - print first then call
 // TIME: O(n)
 
-public class PrintUsingRecursion {
+public class PrintUsingRecursionNto1 {
        public void printNumbers(int n) {
         if (n == 0) return; 
+        System.out.println(n); 
         printNumbers(n - 1);
-        System.out.println(n);   
+          
     }
 }
+
